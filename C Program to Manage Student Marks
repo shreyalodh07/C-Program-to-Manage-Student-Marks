@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int m1, m2, m3, total;
+    float avg;
+
+    printf("Enter 3 subject marks: ");
+    scanf("%d %d %d", &m1, &m2, &m3);
+
+    total = m1 + m2 + m3;
+    avg = total / 3.0;
+
+    printf("Total = %d\n", total);
+    printf("Average = %.2f\n", avg);
+
+    if (avg >= 50)
+        printf("Result: Pass");
+    else
+        printf("Result: Fail");
+
+    return 0;
+}
